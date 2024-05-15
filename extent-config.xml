@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <!-- Report title -->
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <protocol>HTTPS</protocol>
+        <title>CuraHealthCare Extent Reports</title>
+        <reportName>CuraHealthCare Automation Test Results</reportName>
+        <dashboardEnabled>true</dashboardEnabled>
+        <startReportForPriorityFilter>1</startReportForPriorityFilter>
+        <startReportForStatusFilter>0</startReportForStatusFilter>
+        <mongoDbHost>localhost</mongoDbHost>
+        <mongoDbPort>27017</mongoDbPort>
+        <mongoDbName>extent</mongoDbName>
+    </configuration>
+
+    <!-- Report themes -->
+    <themes>
+        <!-- Standard theme -->
+        <standard />
+        <!-- Dark theme -->
+        <dark />
+    </themes>
+
+    <!-- Report system information -->
+    <systemInfo>
+        <parameter>
+            <name>OS</name>
+            <value>Windows</value>
+        </parameter>
+        <parameter>
+            <name>browser</name>
+            <value>chrome</value>
+        </parameter>
+    </systemInfo>
+
+    <!-- Report categories -->
+    <category>
+        <name>Login</name>
+        <color>#FF0000</color>
+    </category>
+    <category>
+        <name>Search</name>
+        <color>#00FF00</color>
+    </category>
+</extentreports>
