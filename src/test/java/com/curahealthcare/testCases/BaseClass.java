@@ -16,6 +16,8 @@ import org.testng.annotations.Parameters;
 import java.io.File;
 import java.io.IOException;
 import java.lang.System;
+import java.util.concurrent.TimeUnit;
+
 import com.curahealthcare.utilities.ReadConfig;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -25,12 +27,16 @@ public class BaseClass {
 	public String baseUrl = readConfig.getApplicationUrl();
 	public String username = readConfig.getUsername();
 	public String password = readConfig.password();
+	public String facilityname = readConfig.getFacilityName();
+	public String visitdate =  readConfig.getVisitDate();
 	public static WebDriver driver;
-	public static Logger logger;
+	public static Logger logger = LogManager.getLogger(TC_LoginPage_002.class);
 
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(String browser) {
+		System.setProperty("log4j2.configurationFile", "./log4j2.properties");
+		logger = LogManager.getLogger(TC_MakeAppoinmentPage_003.class);
 		switch (browser) {
 		case "chrome": {
 			WebDriverManager.chromedriver().setup();
@@ -53,12 +59,12 @@ public class BaseClass {
 			break;
 		}
 		}
-		
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get(baseUrl);
 
-		logger = LogManager.getLogger("TC_LoginPage_002.class");
 		
-		System.setProperty("log4j.configurationFile", "./log4j2.properties");
+		
+		
 
 	}
 

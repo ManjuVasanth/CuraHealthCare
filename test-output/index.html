@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Cura_HealthCare" class="navigator-link">
-              <span class="suite-name border-failed">Cura HealthCare</span>
+              <span class="suite-name border-passed">Cura HealthCare</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Cura_HealthCare" class="hide-methods failed suite-Cura_HealthCare"> (hide)</a> <!-- hide-methods failed suite-Cura_HealthCare -->
-                      <a href="#" panel-name="suite-Cura_HealthCare" class="show-methods failed suite-Cura_HealthCare"> (show)</a> <!-- show-methods failed suite-Cura_HealthCare -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cura_HealthCare" class="hide-methods passed suite-Cura_HealthCare"> (hide)</a> <!-- hide-methods passed suite-Cura_HealthCare -->
+                      <a href="#" panel-name="suite-Cura_HealthCare" class="show-methods passed suite-Cura_HealthCare"> (show)</a> <!-- show-methods passed suite-Cura_HealthCare -->
                     </span>
-                    <div class="method-list-content failed suite-Cura_HealthCare">
+                    <div class="method-list-content passed suite-Cura_HealthCare">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Cura_HealthCare" title="com.curahealthcare.testCases.TC_LoginPage_002" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cura_HealthCare" title="com.curahealthcare.testCases.TC_MakeAppoinmentPage_003" class="method navigator-link" hash-for-method="makeAppoinment">makeAppoinment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Cura_HealthCare -->
+                    </div> <!-- method-list-content passed suite-Cura_HealthCare -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,26 +118,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Cura_HealthCare" class="panel Cura_HealthCare">
-          <div class="suite-Cura_HealthCare-class-failed">
+          <div class="suite-Cura_HealthCare-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.curahealthcare.testCases.TC_LoginPage_002</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.curahealthcare.testCases.TC_MakeAppoinmentPage_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.curahealthcare.testCases.TC_LoginPage_002.loginTest(TC_LoginPage_002.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <a name="makeAppoinment">
+                  </a> <!-- makeAppoinment -->
+                  <span class="method-name">makeAppoinment</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cura_HealthCare-class-failed -->
+          </div> <!-- suite-Cura_HealthCare-class-passed -->
         </div> <!-- panel Cura_HealthCare -->
         <div panel-name="test-xml-Cura_HealthCare" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -154,7 +149,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Cura HealthCare Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.curahealthcare.testCases.TC_LoginPage_002&quot;/&gt;
+      &lt;class name=&quot;com.curahealthcare.testCases.TC_MakeAppoinmentPage_003&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Cura HealthCare Test --&gt;
 &lt;/suite&gt; &lt;!-- Cura HealthCare --&gt;
@@ -196,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.curahealthcare.testCases.TC_LoginPage_002')
-data.setCell(0, 3, 2755);
+data.setCell(0, 1, 'makeAppoinment')
+data.setCell(0, 2, 'com.curahealthcare.testCases.TC_MakeAppoinmentPage_003')
+data.setCell(0, 3, 6162);
 window.suiteTableData['Cura_HealthCare']= { tableData: data, tableDiv: 'times-div-Cura_HealthCare'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Cura_HealthCare">
               </div> <!-- times-div-Cura_HealthCare -->
             </div> <!-- times-div -->
@@ -229,20 +224,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.curahealthcare.testCases.TC_LoginPage_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.curahealthcare.testCases.TC_MakeAppoinmentPage_003</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginTest</span>
-                <span class="method-start">5391 ms</span>
+                <span class="method-name">makeAppoinment</span>
+                <span class="method-start">3890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8169 ms</span>
+                <span class="method-start">10105 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

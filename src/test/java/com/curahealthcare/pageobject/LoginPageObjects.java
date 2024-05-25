@@ -27,6 +27,10 @@ public class LoginPageObjects {
 	@CacheLookup
 	private WebElement loginButton;
 	
+	@FindBy(linkText ="Logout")
+	@CacheLookup
+	private WebElement logoutBtn;
+	
 	public void setUsername(String uname) {
 		username.sendKeys(uname);
 		
@@ -38,4 +42,9 @@ public class LoginPageObjects {
 	public void clickLogin() {
 		loginButton.click();
 	}
+	public void clickLogout() {
+		logoutBtn.click();
+	}
+	
+	
 }

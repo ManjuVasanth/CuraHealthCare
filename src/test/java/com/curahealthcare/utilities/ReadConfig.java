@@ -32,5 +32,16 @@ public class ReadConfig {
 		return password;
 		
 	}
+	
+	public String getFacilityName() {
+		String facilityName = properties.getProperty("facilityname");
+		return facilityName;
+		
+	}
+	
+	public String getVisitDate() {
+		String visitDate = properties.getProperty("visitdate");
+		return visitDate;
+	}
 
 }

@@ -9,8 +9,9 @@
 	<test name="Cura HealthCare Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.curahealthcare.testCases.TC_LoginPage_002" />
-
+			 <!--<class name="com.curahealthcare.testCases.TC_LoginPage_002" />-->
+			<!--<class name="com.curahealthcare.testCases.TC_LoginDDT_002" />-->
+			<class name="com.curahealthcare.testCases.TC_MakeAppoinmentPage_003" />
 
 		</classes>
 	</test> <!--

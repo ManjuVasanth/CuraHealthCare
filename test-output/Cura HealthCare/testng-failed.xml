@@ -7,13 +7,13 @@
   <test thread-count="5" name="Cura HealthCare Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.curahealthcare.testCases.TC_LoginPage_002">
+      <class name="com.curahealthcare.testCases.TC_LoginDDT_002">
         <methods>
           <include name="tearDown"/>
-          <include name="loginTest"/>
+          <include name="loginDDT" invocation-numbers="0 1 2 3 4"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.curahealthcare.testCases.TC_LoginPage_002 -->
+      </class> <!-- com.curahealthcare.testCases.TC_LoginDDT_002 -->
     </classes>
   </test> <!-- Cura HealthCare Test(failed) -->
 </suite> <!-- Failed suite [Cura HealthCare] -->
