@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-24T22:12:18 CDT" name="Cura HealthCare" finished-at="2024-05-24T22:12:29 CDT" duration-ms="10808">
+  <suite started-at="2024-06-01T00:18:20 CDT" name="Cura HealthCare" finished-at="2024-06-01T00:18:30 CDT" duration-ms="9586">
     <groups>
     </groups>
-    <test started-at="2024-05-24T22:12:18 CDT" name="Cura HealthCare Test" finished-at="2024-05-24T22:12:29 CDT" duration-ms="10808">
+    <test started-at="2024-06-01T00:18:20 CDT" name="Cura HealthCare Test" finished-at="2024-06-01T00:18:30 CDT" duration-ms="9586">
       <class name="com.curahealthcare.testCases.TC_MakeAppoinmentPage_003">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-05-24T22:12:19 CDT" name="setUp" finished-at="2024-05-24T22:12:22 CDT" duration-ms="3873" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-06-01T00:18:21 CDT" name="setUp" finished-at="2024-06-01T00:18:27 CDT" duration-ms="6110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="makeAppoinment()[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-05-24T22:12:23 CDT" name="makeAppoinment" finished-at="2024-05-24T22:12:29 CDT" duration-ms="6162" status="PASS">
+        <test-method signature="makeAppoinment()[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-06-01T00:18:27 CDT" name="makeAppoinment" finished-at="2024-06-01T00:18:30 CDT" duration-ms="2533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeAppoinment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-05-24T22:12:29 CDT" name="tearDown" finished-at="2024-05-24T22:12:29 CDT" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.curahealthcare.testCases.TC_MakeAppoinmentPage_003@7eb01b12]" started-at="2024-06-01T00:18:30 CDT" name="tearDown" finished-at="2024-06-01T00:18:30 CDT" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

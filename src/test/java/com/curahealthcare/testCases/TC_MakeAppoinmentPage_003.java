@@ -29,21 +29,28 @@ public class TC_MakeAppoinmentPage_003 extends BaseClass {
 		
 		MakeAppoinmentPageObjects makeappoinmentPageObjects = new MakeAppoinmentPageObjects(driver);
 		makeappoinmentPageObjects.selectFacility(facilityname);
+		logger.info("Facilityname is clicked");
 		makeappoinmentPageObjects.selectHealthCareProgram();
+		logger.info("HealthCareProgram is selected");
 		makeappoinmentPageObjects.setDateSelection(visitdate);
-		Thread.sleep(3000);
+		logger.info("visitdate is selected");
+		
 		makeappoinmentPageObjects.clickBookAppoinment();
+		logger.info("BookAppoinment is clicked");
+		
 	boolean confirmation =	driver.getPageSource().contains("Appointment Confirmation");
 	
 	if(confirmation==true) {
 		Assert.assertTrue(true);
-		System.out.println("Please be informed that your appointment has been booked as following:");
+		System.out.println("Please be informed that your appointment has been booked");
+		logger.info("Appoinment is booked");
 	}
 	else {
 		Assert.assertTrue(false);
 	
 		try {
 			captureScreen(driver,"makeAppoinment");
+			logger.info("Appoinment is not booked");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

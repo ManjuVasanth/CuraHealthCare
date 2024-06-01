@@ -1,0 +1,11 @@
+com\curahealthcare\testCases\TC_LoginPage_002.class
+com\curahealthcare\pageobject\HomePageObjects.class
+com\curahealthcare\utilities\XLUtils.class
+com\curahealthcare\testCases\BaseClass.class
+com\curahealthcare\testCases\TC_HomePage_001.class
+com\curahealthcare\utilities\ReadConfig.class
+com\curahealthcare\pageobject\LoginPageObjects.class
+com\curahealthcare\testCases\TC_LoginDDT_002.class
+com\curahealthcare\utilities\Reporting.class
+com\curahealthcare\pageobject\MakeAppoinmentPageObjects.class
+com\curahealthcare\testCases\TC_MakeAppoinmentPage_003.class

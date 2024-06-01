@@ -28,7 +28,7 @@ public class BaseClass {
 	public String username = readConfig.getUsername();
 	public String password = readConfig.password();
 	public String facilityname = readConfig.getFacilityName();
-	public String visitdate =  readConfig.getVisitDate();
+	public String visitdate = readConfig.getVisitDate();
 	public static WebDriver driver;
 	public static Logger logger = LogManager.getLogger(TC_LoginPage_002.class);
 
@@ -59,12 +59,8 @@ public class BaseClass {
 			break;
 		}
 		}
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
-
-		
-		
-		
 
 	}
 
@@ -72,12 +68,13 @@ public class BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+
 	public void captureScreen(WebDriver driver, String testCaseName) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+testCaseName +".png");
+		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + testCaseName + ".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
-		
+
 	}
 }
